@@ -1,0 +1,8 @@
+README.md
+setup.py
+template_from_equation/__init__.py
+template_from_equation/template_from_equation.py
+template_from_equation.egg-info/PKG-INFO
+template_from_equation.egg-info/SOURCES.txt
+template_from_equation.egg-info/dependency_links.txt
+template_from_equation.egg-info/top_level.txt
