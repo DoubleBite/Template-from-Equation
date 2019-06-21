@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name='template_from_equation',  
-    version='0.1',
+    version='0.1.2',
     author="Shih-hong Tsai",
     author_email="doublebite@iis.sinica.edu.tw",
     description="Create template from equation",

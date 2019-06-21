@@ -5,7 +5,8 @@ BINOP_SYMBOLS = {
     ast.Add: "+",
     ast.Sub: "-",
     ast.Mult: "*",
-    ast.Div: "/"
+    ast.Div: "/",
+    ast.BitXor: "^"
 }
 
 
@@ -47,7 +48,12 @@ class Equation:
         'n0 * x0 + n1 * n2 = x1'
         >>> eq3.get_template(num_slot=[2,5])
         'n0 * x0 + n1 * 12 = x1'
-        
+        >>> eq3 = Equation("2*x+5*12 = y")
+
+        >>> eq4 = Equation("2^x+5^12 = y")
+        >>> eq4.get_template()
+        'n0 ^ x0 + n1 ^ n2 = x1'
+
     Reference:
         + [codegen: Some of the naming styles but not the code are adapted from codegen, which is a library to convert ast tree to python code] 
             (https://github.com/andreif/codegen) 
